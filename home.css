@@ -1,0 +1,111 @@
+/* Variabelen voor kleur en styling */
+:root {
+    --primary-color: #2570b3;
+    --secondary-color: #ffffff;
+    --font-color: #333;
+    --background-image: url('img/How-to-motivate-teambuilding1.webp');
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Body styling */
+  body {
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--font-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav .logo {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Main container styling */
+  .home-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .home-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    color: var(--secondary-color);
+    max-width: 600px;
+  }
+  
+  /* Styling voor de tekst en knoppen */
+  .home-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .home-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #2a9cff;
+  }
+  
+  /* Media queries voor responsiviteit */
+  @media (max-width: 768px) {
+    .home-content h1 {
+      font-size: 2rem;
+    }
+    .home-content p {
+      font-size: 1rem;
+    }
+    .btn {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-content h1 {
+      font-size: 1.5rem;
+    }
+    .home-content p {
+      font-size: 0.9rem;
+    }
+    .btn {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+  
